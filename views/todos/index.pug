@@ -1,0 +1,6 @@
+form.main(method="GET", action="/todos")
+  input(id="search", name="q")
+  button(type="submit") Search
+ul.todo-list
+  each todo in todos
+    li(id=todo.id) #{todo.content}
